@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Track your Step's!"
-    android:gravity="center"
-    android:textSize="25sp"
-    android:textStyle="bold"
-    android:textColorHint="#3f51b5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/track_your_step_s"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColorHint="#3f51b5"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -24,52 +24,48 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.example.rasik.steps.CircularProgressBar
-            android:id="@+id/circularProgressbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cpb_background_progressbar_color="#b6bbd8"
-            app:cpb_background_progressbar_width="10dp"
-            app:cpb_progressbar_color="#3f51b5"
-            app:cpb_progressbar_width="20dp" />
+                    <com.example.rasik.steps.CircularProgressBar
+                        android:id="@+id/circularProgressbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cpb_background_progressbar_color="#b6bbd8"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="20dp" />
 
-        <TextView
-            android:id="@+id/tv_steps"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="0.06"
-            android:textSize="85sp"
-            android:textStyle="bold"
-            android:hint="0"
-            android:layout_centerVertical="true"
-            android:layout_alignRight="@+id/circularProgressbar"
-            android:layout_alignEnd="@+id/circularProgressbar" />
+                    <TextView
+                        android:id="@+id/tv_steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="0.06"
+                        android:textSize="85sp"
+                        android:textStyle="bold"
+                        android:hint="0"
+                        android:layout_centerVertical="true"
+                        android:layout_alignRight="@+id/circularProgressbar"
+                        android:layout_alignEnd="@+id/circularProgressbar" />
+
     </RelativeLayout>
 
+                    <Button
+                        android:id="@+id/btn_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_walking"
+                        android:theme="@style/PrimaryFlatButton"/>
 
+                    <Button
+                        android:id="@+id/btn_stop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stop_walking"
+                        android:theme="@style/PrimaryFlatButton" />
 
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start Walking"
-        android:theme="@style/PrimaryFlatButton"/>
-
-    <Button
-        android:id="@+id/btn_stop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Stop Walking"
-        android:theme="@style/PrimaryFlatButton" />
-
-    <ImageView
-        android:id="@+id/imageview_animation_list_filling"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/animation_list_filling"
-        />
-
-
+                    <ImageView
+                        android:id="@+id/imageview_animation_list_filling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/animation_list_filling" />
 
 </LinearLayout>
