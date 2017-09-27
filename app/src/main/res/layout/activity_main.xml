@@ -6,7 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Track your Step's!"
+    android:gravity="center"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textColorHint="#3f51b5"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
