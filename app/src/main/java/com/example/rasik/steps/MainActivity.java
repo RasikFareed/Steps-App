@@ -53,8 +53,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 ImageView mImageViewFilling = (ImageView) findViewById(R.id.imageview_animation_list_filling);
                 mImageViewFilling.setBackgroundResource(R.drawable.animation_list_filling);
                 ((AnimationDrawable) mImageViewFilling.getBackground()).start();
-                textView.setText("");
                 numSteps = 0;
+                textView.setTextSize(85);
+                textView.setText(""+numSteps);
                 circularProgressBar.setProgressWithAnimation(numSteps);
                 sensorManager.registerListener(MainActivity.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
                 Toast.makeText(MainActivity.this,"Keep the phone in your pocket and Start Walking!",Toast.LENGTH_SHORT).show();
@@ -96,7 +97,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void step(long timeNs) {
         numSteps++;
         textView.setTextColor(Color.parseColor("#4fb3bf"));
-        textView.setTextSize(85);
         textView.setText(""+numSteps);
     }
 

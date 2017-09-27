@@ -34,6 +34,7 @@
             android:layout_weight="0.06"
             android:textSize="85sp"
             android:textStyle="bold"
+            android:hint="0"
             android:layout_centerVertical="true"
             android:layout_alignRight="@+id/circularProgressbar"
             android:layout_alignEnd="@+id/circularProgressbar" />
@@ -53,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Stop Walking"
-        android:theme="@style/PrimaryFlatButton"/>
+        android:theme="@style/PrimaryFlatButton" />
 
     <ImageView
         android:id="@+id/imageview_animation_list_filling"
