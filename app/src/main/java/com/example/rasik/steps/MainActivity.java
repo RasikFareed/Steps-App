@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 numSteps = 0;
                 circularProgressBar.setProgressWithAnimation(numSteps);
                 sensorManager.registerListener(MainActivity.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
-                Toast.makeText(MainActivity.this,"Keep your phone in the pocket and Start Walking!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Keep the phone in your pocket and Start Walking!",Toast.LENGTH_SHORT).show();
 
             }
         });
