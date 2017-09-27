@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- GENERAL -->
+    <dimen name="default_stroke_width">7dp</dimen>
+    <dimen name="default_background_stroke_width">3dp</dimen>
+    <dimen name="horizontal_margin">50dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+</resources>
